@@ -13,7 +13,7 @@ variable "acceptor_vpc_id" {
   description = "Acceptor VPC ID"
 }
 
-variable "var_acceptor_vpc_region" {
+variable "acceptor_vpc_region" {
   type = "string"
   description = "Acceptor VPC Region"
 }
