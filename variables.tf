@@ -13,6 +13,11 @@ variable "acceptor_vpc_id" {
   description = "Acceptor VPC ID"
 }
 
+variable "var_acceptor_vpc_region" {
+  type = "string"
+  description = "Acceptor VPC Region"
+}
+
 variable "auto_accept" {
   default     = "true"
   description = "Automatically accept the peering (both VPCs need to be in the same AWS account)"

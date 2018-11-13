@@ -13,6 +13,7 @@ resource "aws_vpc_peering_connection" "default" {
   count       = "${var.enabled == "true" ? 1 : 0}"
   vpc_id      = "${var.requestor_vpc_id}"
   peer_vpc_id = "${var.acceptor_vpc_id}"
+  peer_region = "${var.acceptor_vpc_region}"
 
   auto_accept = "${var.auto_accept}"
 
