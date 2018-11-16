@@ -16,6 +16,7 @@ variable "acceptor_vpc_id" {
 variable "acceptor_vpc_region" {
   type = "string"
   description = "Acceptor VPC Region"
+  default = ""
 }
 
 variable "auto_accept" {
